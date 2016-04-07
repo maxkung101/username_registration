@@ -1,0 +1,364 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #000;
+	background-color: #fff;
+}
+
+h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:28px;
+	line-height:28px;
+	font-weight:900;
+	color:#e90;
+}
+
+p {
+	font:15px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 16px 0px;
+	padding:0px;
+}
+
+.Toggle {
+	background:#bbbbbb;
+	text-align: center;
+	font-size:20px;
+	padding:5px;
+	display:none;
+}
+
+.error {
+	color:#FF0033;
+	background-color:#FFF;
+	font-size:14px;
+	}
+
+a {
+	text-decoration: none;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+	
+a:link, a:visited {color: #b80;}
+
+a:hover {background-color: #eee;}
+
+a.bar {
+	color:#09c;
+	font-size:15px;
+	text-decoration:none;
+	font-weight:600;
+	font-family:verdana, arial, helvetica, sans-serif;
+	padding:0px;
+	width:100px;
+}
+
+a.homelink {
+	color:#000;
+	font-family:verdana, arial, helvetica, sans-serif;
+}
+
+table {
+	background-color : #000000;
+}
+
+td, th {
+	border           : solid thin;
+	border-color     : #eeeeee;
+	background-color : #ffffff;
+}
+
+#tablemain { width: 100%; }
+
+#slide {
+	background-color : #fefefe;
+	border-color     : #ffffff;
+	}
+
+#slideme {
+	border           : none;
+	border-color     : #eeeeee;
+	background-color : #ffffff;
+}
+
+#slide_me { width: 200px ; }
+
+mark { background-color: #ffffff; }
+
+fieldset {
+	background-color: #efefef;
+	text-align: left;
+	padding: 30px 30px 30px 30px;
+}
+
+ul {  list-style: none ; }
+
+li {   display: inline ;    margin:  0  5%  0  0  ;   }
+
+textarea {
+	width:100%;
+	resize: none;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit], input[type=button] {
+    padding:5px 15px; 
+    background:#ccffcc; 
+    border:1px;
+	border-color: #00ee00;
+    cursor:pointer;
+    border-radius: 5px; 
+}
+
+#Header {
+	font-size:30px;
+	margin:0px 0px 10px 0px;
+	padding:29px 0px 29px 30px;
+	/* For IE5/Win's benefit height = [correct height] + [top padding] + [top and bottom border widths] */
+	height:33px; /* 14px + 17px + 2px = 33px */
+	border-style:solid;
+	border-color:#000000;
+	border-width:1px 0px; /* top and bottom borders: 1px; left and right borders: 0px */
+	line-height:11px;
+	background-color:#e90;
+	height:14px; /* the correct height */
+	}
+/* I've heard this called the "be nice to Opera 5" rule. Basically, it feeds correct 
+length values to user agents that exhibit the parsing error exploited above yet get 
+the CSS box model right and understand the CSS2 parent-child selector. ALWAYS include
+a "be nice to Opera 5" rule every time you use the Tantek Celik hack (above). */
+body>#Header {height:14px;}
+
+#Content {
+	margin:auto;
+	width: 75%;
+	padding:10px;
+	}
+
+#Content>p {margin:0px; text-indent:30px;}
+
+#Menu {
+	position:absolute;
+	top:1px;
+	right:1px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+	display:block;
+}
+/* Again, "be nice to Opera 5". */
+body>#Menu {width:75%;}
+
+#Menumobile {
+	position:absolute;
+	top:1px;
+	right:1px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+	display:none;
+}
+
+#associated  { color:red ;  width:40px  ; }
+
+#captcha_input {
+	width: 100%;
+	height: 200px;
+}
+
+/*#A {
+	-webkit-animation: myfirst 5s
+		linear infinite;
+	animation: myfirst 5s
+}	
+
+@-webkit-keyframes myfirst {
+	0%		{height: 200px; width: 200px}
+	50%		{height: 100px; width: 300px}
+	100%	{height: 200px; width: 200px}
+}*/
+
+#thread {}
+
+#comment {
+	width: 90%;
+	background-color: #fff;
+	padding: 4px 8px 4px 8px;
+}
+
+@media only screen and ( max-width: 860px )  {
+
+div#Menu {
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:0px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+	width:100%;
+	display:none;
+	}
+
+div#Menumobile {
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:0px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+	width:100%;
+	display:block;
+	}
+
+div#Content {
+	margin:0px 10px 50px 10px;
+	width: 94%;
+	padding:10px;
+	}
+
+div#Header {
+	font-size:24px;
+	margin:50px 0px 10px 0px;
+	padding:17px 0px 17px 20px;
+	/* For IE5/Win's benefit height = [correct height] + [top padding] + [top and bottom border widths] */
+	height:33px; /* 14px + 17px + 2px = 33px */
+	border-style:solid;
+	border-color:#000000;
+	border-width:1px 0px; /* top and bottom borders: 1px; left and right borders: 0px */
+	line-height:11px;
+	background-color:#e90;
+	height:14px; /* the correct height */
+	}
+
+table#tablemain {
+	width: 100%;
+	font-size: 12px;
+}
+
+a {
+	color:#b80;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:normal;
+	font-family:verdana, arial, helvetica, sans-serif;
+	padding: 5px;
+	width:100px;
+	}
+
+li {   display: inline ;    margin:  0  40px  0  0  ;   }
+
+fieldset {
+	background-color: #efefef;
+	text-align: left;
+	padding: 30px 0px 30px 30px;
+}
+
+.Toggle {
+	background:#bbbbbb;
+	text-align: center;
+	font-size:20px;
+	padding:5px;
+	display:block;
+	}
+
+.panelmobile  { display:none; }
+
+}
+
+@media only screen and ( max-width: 480px )  {
+
+body {background-color: #fff;}
+
+div#Menu {
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:0px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+	width:100%;
+	display:none;
+	}
+
+div#Menumobile {
+	position:absolute;
+	top:0px;
+	right:0px;
+	padding:0px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+	width:100%;
+	display:block;
+	}
+
+div#Content {
+	margin:0px 10px 50px 10px;
+	width: 90%;
+	padding:10px;
+	}
+
+div#Header {
+	font-size:24px;
+	margin:50px 0px 10px 0px;
+	padding:17px 0px 17px 20px;
+	/* For IE5/Win's benefit height = [correct height] + [top padding] + [top and bottom border widths] */
+	height:33px; /* 14px + 17px + 2px = 33px */
+	border-style:solid;
+	border-color:#000000;
+	border-width:1px 0px; /* top and bottom borders: 1px; left and right borders: 0px */
+	line-height:11px;
+	background-color:#e90;
+	height:14px; /* the correct height */
+	}
+
+table#tablemain {
+	width: 100%;
+	font-size: 10px;
+}
+
+a {
+	color:#b80;
+	font-size:20px;
+	text-decoration:none;
+	font-weight:normal;
+	font-family:verdana, arial, helvetica, sans-serif;
+	padding: 5px;
+	width:100px;
+	}
+
+li {   display: block ;    margin:  0  100%  20px  0  ;   }
+
+fieldset {
+	border-style: none;
+	background-color: #efefef;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+}
+
+.Toggle {
+	background:#bbbbbb;
+	text-align: center;
+	font-size:20px;
+	padding:5px;
+	display:block;
+	}
+
+.panelmobile  { display:none; }
+
+}
