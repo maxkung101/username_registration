@@ -33,7 +33,7 @@ include ("sticky_slider.php");
 	<th>Id</th>
 	<th class="hide">Active</th>
 	<th>Name</th>
-	<th>Level</th>
+	<th class="hide">Level</th>
 	<th>Email</th>
 	<th class="hide">Registered date</th>
 	<th>Last logon</th>
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		else
 			echo " <td class=\"hide\"><a href=\"activate.php?id=".$user_id."&n=".$n."\">Activate</a></td>\n";
 		echo " <td>".$name."</td>\n";
-		echo " <td>".$level."</td>\n";
+		echo " <td class=\"hide\">".$level."</td>\n";
 		echo " <td>".$email."</td>\n";
 		echo " <td class=\"hide\">".$registration_date."</td>\n";
 		echo " <td>".$time."</td>\n";
