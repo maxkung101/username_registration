@@ -23,7 +23,7 @@ $("#press").click( function() {
 	// run ajax:
     $.ajax({
 		type: 	"POST" ,
-		url: 	"../../weather.php",
+		url: 	"js/weather.php",
 		data: 	"zipcode=" + zip,		             //+ and &junk=+Math.random() 
 		beforeSend: function() { $("#B").html("<mark>Loading...</mark>\n<div class=\"spinner\"></div>"); },                                   //SPINNERS: http://codepen.io/collection/HtAne
 

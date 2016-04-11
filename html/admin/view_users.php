@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		echo "<tr>\n" ;
 		echo " <td>".$user_id."</td>\n";
 		if ( $active == NULL )
-			echo " <th><img src=\"img/check-mark.png\" width=\"12\" alt=\"\"/></th>\n";
+			echo " <th><img src=\"images/check-mark.png\" width=\"12\" alt=\"\"/></th>\n";
 		else
 			echo " <td><a href=\"activate.php?id=".$user_id."&n=".$n."\">Activate</a></td>\n";
 		echo " <td>".$name."</td>\n";
