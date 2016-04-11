@@ -45,10 +45,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 	$x = $n * 3600;
 	if ($x == 0) {
-		$s = "SELECT user_id, first_name, last_name, IF(user_level=1,'Administrator','User') AS `level`, email, registration_date, last_logged_on, active "
+		$s = "SELECT user_id, first_name, last_name, IF(user_level=1,'Admin','User') AS `level`, email, registration_date, last_logged_on, active "
 			. "FROM users ";
 	} else {
-		$s = "SELECT user_id, first_name, last_name, IF(user_level=1,'Administrator','User') AS `level`, email, registration_date, last_logged_on, active "
+		$s = "SELECT user_id, first_name, last_name, IF(user_level=1,'Admin','User') AS `level`, email, registration_date, last_logged_on, active "
 			. "FROM users "
 			. "WHERE UNIX_TIMESTAMP(`last_logged_on`) > UNIX_TIMESTAMP() - $x ";
 	}
