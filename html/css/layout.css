@@ -242,7 +242,7 @@ div#Content {
 
 div#Header {
 	font-size:24px;
-	margin:50px 0px 10px 0px;
+	margin:0px 0px 10px 0px;
 	padding:17px 0px 17px 20px;
 	/* For IE5/Win's benefit height = [correct height] + [top padding] + [top and bottom border widths] */
 	height:33px; /* 14px + 17px + 2px = 33px */
@@ -278,6 +278,10 @@ fieldset {
 }
 
 .Toggle {
+	width: 70px;
+	position: absolute;
+	right:3px;
+	top: 7px;
 	background:#bbbbbb;
 	text-align: center;
 	font-size:20px;
@@ -285,7 +289,12 @@ fieldset {
 	display:block;
 	}
 
-.panelmobile  { display:none; }
+.panelmobile  {
+	display:none;
+	position: absolute;
+	background-color:#eee;
+	top: 48px;
+}
 
 .hide2 { display: none; }
 }
@@ -326,7 +335,7 @@ div#Content {
 
 div#Header {
 	font-size:24px;
-	margin:50px 0px 10px 0px;
+	margin:0px 0px 10px 0px;
 	padding:17px 0px 17px 20px;
 	/* For IE5/Win's benefit height = [correct height] + [top padding] + [top and bottom border widths] */
 	height:33px; /* 14px + 17px + 2px = 33px */
@@ -363,6 +372,7 @@ fieldset {
 }
 
 .Toggle {
+	width: 70px;
 	background:#bbbbbb;
 	text-align: center;
 	font-size:20px;
@@ -370,7 +380,13 @@ fieldset {
 	display:block;
 	}
 
-.panelmobile  { display:none; }
+.panelmobile  {
+	width: 100%;
+	display:none;
+	position: absolute;
+	background-color:#eee;
+	top: 48px;
+}
 
 .hide, .hide2 { display: none; }
 }
