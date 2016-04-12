@@ -290,6 +290,7 @@ fieldset {
 	}
 
 .panelmobile  {
+	width: 100%;
 	display:none;
 	position: absolute;
 	background-color:#eee;
@@ -362,7 +363,7 @@ a {
 	width:100px;
 	}
 
-li {   display: block ;    margin:  0  100%  20px  0  ;   }
+li {   display: block ;    margin:  0  100%  20px  0  ;  width: 100%; }
 
 fieldset {
 	border-style: none;
