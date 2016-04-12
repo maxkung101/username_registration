@@ -22,9 +22,9 @@ if (isset($_SESSION['user_id'])) {
 <tr>
 	<th>Subject</th>
 	<th>Posted by</th> 
-	<th>Posted on</th>
+	<th class="hide2">Posted on</th>
 	<th>Replies</th>
-	<th>Latest reply</th>
+	<th class="hide">Latest reply</th>
 </tr>
 <?php # write the query
 
@@ -45,12 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		echo "<tr>\n" ;
 		echo " <td><a href=\"read.php?subject=".$name."&amp;tid=".$forum_id."\">".$name."</a></td>\n";
 		echo " <td>".$first_name." ".$last_name."</td>\n";
-		echo " <td>".$posted_on."</td>\n";
+		echo " <td class=\"hide2\">".$posted_on."</td>\n";
 		$ss = "SELECT count(*) AS NumReplies FROM messages WHERE forum_id = ".$forum_id;
 		$rr = mysqli_query ($dbc, $ss) or trigger_error("Query: ".$ss."\n<br/>MySQL Error: " . mysqli_error($dbc));
 		if (@mysqli_num_rows($rr) == 0) {
 			echo " <td>0</td>\n";
-			echo " <td>0000-00-00 0:0:0</td>\n";
+			echo " <tdclass=\"hide\">0000-00-00 0:0:0</td>\n";
 		} else {
 			while ( $sql2 = mysqli_fetch_array ($rr, MYSQLI_ASSOC) ) {
 				$count = $sql2["NumReplies"];
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 				$rrr = mysqli_query ($dbc, $sss) or trigger_error("Query: ".$sss."\n<br/>MySQL Error: " . mysqli_error($dbc));
 				while ( $sql3 = mysqli_fetch_array ($rrr, MYSQLI_ASSOC) ) {
 					$latest = $sql3["latest"];
-					echo " <td>".$latest."</td>\n";
+					echo " <td class=\"hide\">".$latest."</td>\n";
 				}
 			}
 		}
