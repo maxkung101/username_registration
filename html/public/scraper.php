@@ -1,8 +1,4 @@
-<style>
-span   { font-weight: bold;  color: red; }
-img { width: 150; height: 100; }
-</style>
-
+<style>span { font-weight: bold;  color: red; } img { width: 150; height: 100; }</style>
 <?php # scraper.php
 
 require ('../includes/config.inc.php'); 
