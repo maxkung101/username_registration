@@ -1,4 +1,4 @@
-<?php # Script 18.8 - login.php
+<?php # login.php
 # This is the login page for the site.
 
 require ('../includes/config.inc.php'); 
