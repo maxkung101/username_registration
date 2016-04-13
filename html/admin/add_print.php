@@ -1,4 +1,4 @@
-<?php # Script 19.2 - add_print.php
+<?php # add_print.php
 // This page allows the administrator to add a print (product).
 
 require ('../includes/config.inc.php');
