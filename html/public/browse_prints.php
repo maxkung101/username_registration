@@ -1,4 +1,4 @@
-<?php # Script 19.6 - browse_prints.php
+<?php # browse_prints.php
 // This page displays the available prints (products).
 
 // Set the page title and include the HTML header:
