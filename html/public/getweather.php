@@ -1,4 +1,4 @@
-<?php # weather
+<?php # getweather.php
 require ('../includes/config.inc.php'); 
 $page_title = 'Weather';
 include ('../includes/header.html');
