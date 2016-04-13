@@ -1,4 +1,4 @@
-<?php # Script 19.9 - add_cart.php
+<?php # add_cart.php
 // This page adds prints to the shopping cart.
 
 // Set the page title and include the HTML header:
