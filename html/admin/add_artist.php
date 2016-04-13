@@ -1,4 +1,4 @@
-<?php # Script 19.1 - add_artist.php
+<?php # add_artist.php
 // This page allows the administrator to add an artist.
 
 require ('../includes/config.inc.php');
