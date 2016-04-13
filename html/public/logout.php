@@ -1,10 +1,10 @@
 <?php # Script 18.9 - logout.php
 # This is the logout page for the site.
 
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Logout';
 $redirect = '<meta http-equiv="refresh" content="5;url=../index.html">';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 // If no first_name session variable exists, redirect the user:
 if (!isset($_SESSION['first_name'])) {
@@ -24,4 +24,4 @@ if (!isset($_SESSION['first_name'])) {
 ?>
 <h3>You are now logged out.</h3>
 You will be redirected to the main page in 5 seconds. If not, then click <a href="../index.html">here</a>.
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

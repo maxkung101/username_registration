@@ -9,7 +9,7 @@ $name = (!empty($_GET['name'])) ? $_GET['name'] : 'print image';
 if (isset($_GET['image']) && filter_var($_GET['image'], FILTER_VALIDATE_INT, array('min_range' => 1))  ) {
 
 	// Full image path:
-	$image = '../uploads/' . $_GET['image'];
+	$image = '../../uploads/' . $_GET['image'];
 
 	// Check that the image exists and is a file:
 	if (!file_exists ($image) || (!is_file($image))) {

@@ -1,7 +1,7 @@
 <?php # weather
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Weather';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	echo "<h1>".$page_title."</h1>";
@@ -57,4 +57,4 @@ $("#press").click( function() {
 <input type=button value="Go" id="press" /><br/><br/>
 <div id="B"></div>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

@@ -1,9 +1,9 @@
 <?php # Script 18.8 - login.php
 # This is the login page for the site.
 
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Login';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['first_name'])) {
 	$url = BASE_URL . 'index.php'; // Define the URL.
@@ -124,4 +124,4 @@ setcookie("fontCookie", $_SESSION["font"], time() + 3600*24*100);
 </fieldset>
 </form>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

@@ -1,9 +1,9 @@
 <?php # Script 19.2 - add_print.php
 // This page allows the administrator to add a print (product).
 
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'Add a Print';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	if ($_SESSION['user_level'] == 1) {
@@ -164,4 +164,4 @@ if ( !empty($errors) && is_array($errors) ) {
 
 </form>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

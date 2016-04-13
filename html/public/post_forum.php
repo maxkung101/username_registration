@@ -1,8 +1,8 @@
 <?php # post_forum.php
 
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'post_forum';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (!isset($_SESSION['user_id'])) {
 	$url = BASE_URL . '../index.html'; // Define the URL.
@@ -33,4 +33,4 @@ header("Location: $url");
 exit(); // Quit the script.
 ?>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

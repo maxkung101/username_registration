@@ -1,9 +1,9 @@
 <?php # Script 19.1 - add_artist.php
 // This page allows the administrator to add an artist.
 
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'Add an Artist';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	if ($_SESSION['user_level'] == 1) {
@@ -75,4 +75,4 @@ if (isset($error)) {
 
 </form>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

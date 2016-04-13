@@ -1,8 +1,8 @@
 <?php # read.php
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $subject = $_GET ["subject"];
 $page_title = 'Forum post: '.$subject;
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	$tid = $_GET ["tid"];
@@ -51,4 +51,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 <input type="submit" name="submit" value="Submit"/>
 </form>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

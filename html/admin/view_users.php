@@ -1,9 +1,9 @@
 <?php # view_users.php
 # This is the view users page for the site.
 
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'View users';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	if ($_SESSION['user_level'] == 1) {
@@ -83,4 +83,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 ?>
 </table><br/>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

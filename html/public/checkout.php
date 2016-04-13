@@ -4,9 +4,9 @@
 // This page assumes that the billing process worked (the money has been taken).
 
 // Set the page title and include the HTML header:
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'Order Confirmation';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 // Assume that the customer is logged in and that this page has access to the customer's ID:
 if (isset($_SESSION['user_id'])) {
@@ -88,5 +88,5 @@ if (mysqli_affected_rows($dbc) == 1) {
 
 mysqli_close($dbc);
 
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

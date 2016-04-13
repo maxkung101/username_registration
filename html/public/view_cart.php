@@ -3,9 +3,9 @@
 // This page also lets the user update the contents of the cart.
 
 // Set the page title and include the HTML header:
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'View Your Shopping Cart';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 // Check if the form has been submitted (to update the cart):
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -86,5 +86,5 @@ if (!empty($_SESSION['cart'])) {
 	echo '<p>Your cart is currently empty.</p>';
 }
 
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

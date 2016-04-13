@@ -2,9 +2,9 @@
 // This page displays the available prints (products).
 
 // Set the page title and include the HTML header:
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'Browse the Prints';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	echo "<h1>".$page_title."</h1>";
@@ -51,5 +51,5 @@ while ($row = mysqli_fetch_array ($r, MYSQLI_ASSOC)) {
 
 echo '</table>';
 mysqli_close($dbc);
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

@@ -1,6 +1,6 @@
 <?php # Script 19.7 - view_print.php
 // This page displays the details for a particular print.
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 
 $row = FALSE; // Assume nothing!
 
@@ -19,7 +19,7 @@ if (isset($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('
 	
 		// Start the HTML page:
 		$page_title = $row['print_name'];
-		include ('includes/header.html');
+		include ('../includes/header.html');
 	
 		// Display a header:
 		echo "<div align=\"center\">
@@ -51,10 +51,10 @@ if (isset($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('
 
 if (!$row) { // Show an error message.
 	$page_title = 'Error';
-	include ('includes/header.html');
+	include ('../includes/header.html');
 	echo '<div align="center">This page has been accessed in error!</div>';
 }
 
 // Complete the page:
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

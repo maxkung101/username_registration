@@ -1,8 +1,8 @@
 <?php # Script 18.7 - activate.php
 // This page activates the user's account.
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Activate Your Account';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 // If $x and $y don't exist or aren't of the proper format, redirect the user:
 if (isset($_GET['x'], $_GET['y']) 
@@ -33,5 +33,5 @@ if (isset($_GET['x'], $_GET['y'])
 
 } // End of main IF-ELSE.
 
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

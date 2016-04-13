@@ -1,8 +1,8 @@
 <?php # Script 18.7 - activate.php
 // This page activates the user's account.
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Activate Users Account';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if ( isset($_GET['id'], $_GET['n']) ) {
 	// Update the database...
@@ -26,5 +26,5 @@ if ( isset($_GET['id'], $_GET['n']) ) {
 
 } // End of main IF-ELSE.
 
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

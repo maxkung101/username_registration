@@ -1,8 +1,8 @@
 <?php # forum.php
 
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Forum';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	echo "<h1>".$page_title."</h1>";
@@ -71,4 +71,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 ?>
 </table>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

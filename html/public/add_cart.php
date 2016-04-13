@@ -2,9 +2,9 @@
 // This page adds prints to the shopping cart.
 
 // Set the page title and include the HTML header:
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'Add to Cart';
-include ('includes/header.html');
+include ('../includes/header.html');
 echo "<a href=\"view_cart.php\">View cart</a>";
 
 if (isset ($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array('min_range' => 1))  ) { // Check for a print ID.
@@ -48,5 +48,5 @@ if (isset ($_GET['pid']) && filter_var($_GET['pid'], FILTER_VALIDATE_INT, array(
 	echo '<div align="center">This page has been accessed in error!</div>';
 }
 
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

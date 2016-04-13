@@ -1,8 +1,8 @@
 <?php # Script 18.6 - register.php
 // This is the registration page for the site.
-require ('includes/config.inc.php');
+require ('../includes/config.inc.php');
 $page_title = 'Register';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	$url = BASE_URL . 'index.php'; // Define the URL.
@@ -239,4 +239,4 @@ setcookie("fontCookie", $_SESSION["font"], time() + 3600*24*100);
 
 </form>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>

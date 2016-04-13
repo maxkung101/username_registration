@@ -5,9 +5,9 @@ img { width: 150; height: 100; }
 
 <?php # scraper.php
 
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Image scraper';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if (isset($_SESSION['user_id'])) {
 	echo "<h1>".$page_title."</h1>";
@@ -45,5 +45,5 @@ function display_images ($url) {
 }
 display_images( "imagetest.html" );
 
-include ('includes/footer.html');
+include ('../includes/footer.html');
 ?>

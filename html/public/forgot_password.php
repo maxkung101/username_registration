@@ -1,8 +1,8 @@
 <?php # Script 18.10 - forgot_password.php
 // This page allows a user to reset their password, if forgotten.
-require ('includes/config.inc.php'); 
+require ('../includes/config.inc.php'); 
 $page_title = 'Reset Your Password';
-include ('includes/header.html');
+include ('../includes/header.html');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	require (MYSQL);
@@ -70,4 +70,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	<div align="center"><input type="submit" name="submit" value="Reset My Password" /></div>
 </form>
 
-<?php include ('includes/footer.html'); ?>
+<?php include ('../includes/footer.html'); ?>
