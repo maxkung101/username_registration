@@ -1,4 +1,4 @@
-<?php # Script 19.11 - checkout.php
+<?php # checkout.php
 // This page inserts the order information into the table.
 // This page would come after the billing process.
 // This page assumes that the billing process worked (the money has been taken).
