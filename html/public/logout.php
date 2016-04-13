@@ -1,4 +1,4 @@
-<?php # Script 18.9 - logout.php
+<?php # logout.php
 # This is the logout page for the site.
 
 require ('../includes/config.inc.php'); 
