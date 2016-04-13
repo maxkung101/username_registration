@@ -1,4 +1,4 @@
-<?php # Script 19.7 - view_print.php
+<?php # view_print.php
 // This page displays the details for a particular print.
 require ('../includes/config.inc.php');
 
