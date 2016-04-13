@@ -1,7 +1,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: verdana, arial, helvetica, sans-serif;
+	font-family: segoe ui semilight, segoe ui, arial, sans-serif;
 	color: #000;
 	background-color: #fff;
 }
@@ -16,7 +16,7 @@ h1 {
 }
 
 p {
-	font:15px verdana, arial, helvetica, sans-serif;
+	font:15px segoe ui semilight, segoe ui, arial, sans-serif;
 	margin:0px 0px 16px 0px;
 	padding:0px;
 }
@@ -37,7 +37,7 @@ p {
 
 a {
 	text-decoration: none;
-	font-family: verdana, arial, helvetica, sans-serif;
+	font-family: segoe ui semilight, segoe ui, arial, sans-serif;
 }
 	
 a:link, a:visited {color: #b80;}
@@ -49,14 +49,14 @@ a.bar {
 	font-size:15px;
 	text-decoration:none;
 	font-weight:600;
-	font-family:verdana, arial, helvetica, sans-serif;
+	font-family:segoe ui semilight, segoe ui, arial, sans-serif;
 	padding:0px;
 	width:100px;
 }
 
 a.homelink {
 	color:#000;
-	font-family:verdana, arial, helvetica, sans-serif;
+	font-family:segoe ui semilight, segoe ui, arial, sans-serif;
 }
 
 table {
