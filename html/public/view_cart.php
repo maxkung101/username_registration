@@ -1,4 +1,4 @@
-<?php # Script 19.10 - view_cart.php
+<?php # view_cart.php
 // This page displays the contents of the shopping cart.
 // This page also lets the user update the contents of the cart.
 
