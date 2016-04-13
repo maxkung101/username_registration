@@ -114,10 +114,9 @@ input[type=text]:focus, input[type=password]:focus {
 input[type=submit], input[type=button] {
     padding:5px 15px; 
     background:#ccffcc; 
-    border:1px;
-	border-color: #00ee00;
+    border:1px solid #00ee00;
     cursor:pointer;
-    border-radius: 5px; 
+    border-radius: 10px; 
 }
 
 #Header {
@@ -258,6 +257,8 @@ table#tablemain {
 	width: 100%;
 	font-size: 12px;
 }
+
+#slide_me { width: 145px ; }
 
 a {
 	color:#b80;
