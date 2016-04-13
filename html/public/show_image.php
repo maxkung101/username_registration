@@ -1,4 +1,4 @@
-<?php # Script 19.8 - show_image.php
+<?php # show_image.php
 // This pages retrieves and shows an image.
 
 // Flag variables:
