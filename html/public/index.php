@@ -1,4 +1,4 @@
-<?php # Script 18.5 - index.php
+<?php # index.php
 // This is the main page for the site.
 
 // Include the configuration file:
