@@ -227,7 +227,7 @@ div#Menumobile {
 	right:0px;
 	padding:0px;
 	background-color:#eee;
-	border:1px dashed #999;
+	border:1px #999;
 	line-height:17px;
 	width:100%;
 	display:block;
@@ -257,8 +257,6 @@ table#tablemain {
 	width: 100%;
 	font-size: 12px;
 }
-
-#slide_me { width: 145px ; }
 
 a {
 	color:#b80;
@@ -323,7 +321,7 @@ div#Menumobile {
 	right:0px;
 	padding:0px;
 	background-color:#eee;
-	border:1px dashed #999;
+	border:1px #999;
 	line-height:17px;
 	width:100%;
 	display:block;
@@ -353,6 +351,8 @@ table#tablemain {
 	width: 100%;
 	font-size: 10px;
 }
+
+#slide_me { width: 145px ; }
 
 a {
 	color:#b80;
