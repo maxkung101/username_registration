@@ -13,7 +13,7 @@ if (isset($_SESSION['user_id'])) {
 	exit(); // Quit the script.
 }
 ?>
-<form action="post_forum.php" method="post"><fieldset>
+<form action="post_forum.php" method="post"><fieldset class="forums">
 	<legend><mark><strong>Post to forum: </strong></mark><input type=varchar id="name" name="name" placeholder="Subject" required/></legend>
 	<textarea id="content" name="content" rows=2 cols=50 placeholder="Say something" required></textarea><br/>
 	<input type="submit" name="submit" value="Submit" align="right">

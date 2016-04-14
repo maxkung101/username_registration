@@ -26,7 +26,7 @@ function display_images ($url) {
 
 	//$count = preg_match_all( '/\w*([aeiou]{2})\w*/i', $contents, $matches, PREG_SET_ORDER);
 	$count = preg_match_all( '<\s*A\s*HREF="([^\"]+)"\s*>([^>]*)<\/A>/i', $contents, $matches, PREG_SET_ORDER);
-	print "<br/><br/>There were $count  matches";
+	print "<br/><br/>There were ".$count." matches";
 
 	foreach ( $matches as $cell ){
 		//print "<br/><br/>Full regex match: " . $cell[0] .  "<br/>Dipthong: <span>" . $cell[1] . "</span>" ;

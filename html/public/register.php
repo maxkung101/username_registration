@@ -233,10 +233,8 @@ setcookie("fontCookie", $_SESSION["font"], time() + 3600*24*100);
 		<input type="text" name="captcha" size=30
 			autocomplete="off" placeholder="What's in the box?" />
 	</p>
-	</fieldset>
-
 	<div align="center"><input type="submit" name="submit" value="Register" /></div>
-
+	</fieldset>
 </form>
 
 <?php include ('../includes/footer.html'); ?>

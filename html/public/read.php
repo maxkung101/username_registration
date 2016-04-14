@@ -14,8 +14,8 @@ if (isset($_SESSION['user_id'])) {
 }
 ?>
 
-<h2><?php echo $subject;?></h2>
-<fieldset>
+<h2><?php echo $subject; ?></h2>
+<fieldset class="forums">
 <?php // displays the forum body
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 }
 ?>
 
-</fieldset><br>
+</fieldset>
 <h3>Write a comment</h3>
 <form action="post_comment.php?forumId=<?php echo $tid; ?>&amp;subject=<?php echo $subject; ?>" method="post">
 <textarea name="comment" id="comment" required rows=10 cols=100 placeholder=""></textarea><br/>

@@ -93,9 +93,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <h1><?php echo $page_title; ?></h1>
-<mark>Your browser must allow cookies in order to log in.</mark>
 <form action="login.php" method="post">
 <fieldset>
+<legend><mark>Your browser must allow cookies in order to log in.</mark></legend>
 <?php # This script creates a cookie.
 
 if (isset($_COOKIE["email"]) && isset($_COOKIE["password"]))
