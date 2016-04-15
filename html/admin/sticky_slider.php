@@ -56,7 +56,7 @@ $(document).ready(function() {
 -->
 <table id="slide"><tr id="slideme">
 <td id="slideme">
-<input type="text" id="associated" readonly="readonly" name="associated" />
+<input type="text" id="associated" readonly="readonly" name="associated">
 </td>
 <!--  HTML UI slider reference 
 A style has been added in head to determine width.

@@ -19,13 +19,13 @@ if (isset($_SESSION['user_id'])) {
 <script>/*
 Modernizr.load( {
   test: Modernizr.inputtypes.range ,
-  yep : "my_yep_script.js" ,
-  nope: "my_nope_script.js"
+  yep : "js/my_yep_script.js" ,
+  nope: "js/my_nope_script.js"
 });*/
 </script>
 <?php // inserts sticky_slider.php
 $n = $_GET ["associated"];
-include ("sticky_slider.php");
+include ("modern_slider.php");
 ?>
 
 <table id="tablemain">
