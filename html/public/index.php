@@ -6,6 +6,7 @@ require ('../includes/config.inc.php');
 
 // Set the page title and include the HTML header:
 $page_title = 'Welcome to this Site!';
+$redirect = '<script src="js/point.js"></script>';
 include ('../includes/header.html');
 
 // Welcome the user (by name if they are logged in):

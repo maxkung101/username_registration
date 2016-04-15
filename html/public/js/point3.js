@@ -1,7 +1,7 @@
 function initialize() {
 	var mapProp = {
-		center:new google.maps.LatLng(0, 0),
-		zoom:2,
+		center:new google.maps.LatLng(40.7451635, -74.7302227),
+		zoom:15,
 		mapTypeId:google.maps.MapTypeId.ROADMAP,
 		backgroundColor: '#ffffff',
 		mapTypeControl: false,
@@ -29,11 +29,5 @@ function initialize() {
 		}
 	};
 	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-	var pos = new google.maps.LatLng(40.6641154, -74.5183064);
-	var infowindow = new google.maps.InfoWindow({
-		map: map,
-		position: pos,
-		content: '<a href="area.php">New Jersey</a>'
-	});
 }
 google.maps.event.addDomListener(window, 'load', initialize);
