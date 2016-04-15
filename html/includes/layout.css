@@ -125,6 +125,10 @@ input[type=submit], input[type=button] {
     border-radius: 10px; 
 }
 
+input[type=range] {
+    width: 98%;
+}
+
 #Header {
 	font-size:30px;
 	margin:0px 0px 10px 0px;
