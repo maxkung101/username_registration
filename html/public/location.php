@@ -21,9 +21,9 @@ if (isset($_SESSION['first_name'])) {
 ?>
 
 <div id="googleMap"></div>
-<a href="#">Hacklebarney Area Map</a><br>
+<a href="http://www.njskylands.com/maps/map1">Hacklebarney Area Map</a><br>
 <a href="#">Videos</a><br>
-<a href="#">Article</a><br>
-<a href="#">Image</a>
+<a href="http://www.njskylands.com/pkhbarney">Article</a><br>
+<a href="http://www.danbalogh.com/hackle.html">Image</a>
 
 <?php include ('../includes/footer.html'); ?>
