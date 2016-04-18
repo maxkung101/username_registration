@@ -21,17 +21,18 @@ if (isset($_SESSION['first_name'])) {
 }
 echo '!</h1>';
 ?>
-
-<div><a href="browse_prints.php" title="E-commerce">E-commerce</a></div>
-<div><a href="forum.php" title="Forum">Forum</a></div>
-<div><a href="getweather.php" title="Weather">Weather</a></div>
-<div><a href="scraper.php" title="Image Scraping">Image Scraping</a></div>
+<div id="apps">
+<div><a href="browse_prints.php" class="apps" title="Shop">Shop</a></div>
+<div><a href="forum.php" class="apps" title="Forum">Forum</a></div>
+<div><a href="getweather.php" class="apps" title="Weather">Weather</a></div>
+<div><a href="scraper.php" class="apps" title="Image Scraping">Image Scraping</a></div>
 <?php # add administrative links
 if ($_SESSION['user_level'] == 1) {
-	echo '<div><a href="../admin/add_artist.php" title="Forum">Add artists</a></div>';
-	echo '<div><a href="../admin/add_print.php" title="Forum">Add prints</a></div>';
+	echo '<div><a href="../admin/add_artist.php" class="apps" title="Forum">Add artists</a></div>';
+	echo '<div><a href="../admin/add_print.php" class="apps" title="Forum">Add prints</a></div>';
 }
 ?>
+</div>
 <div id="largemap">
 <script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0fzgbxscsjv&amp;m=7&amp;s=320&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
 </div>
