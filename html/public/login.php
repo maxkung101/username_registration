@@ -2,7 +2,7 @@
 # This is the login page for the site.
 
 require ('../includes/config.inc.php'); 
-$page_title = 'Login';
+$page_title = 'Sign in';
 include ('../includes/header.html');
 
 if (isset($_SESSION['first_name'])) {
@@ -99,12 +99,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?php # This script creates a cookie.
 
 if (isset($_COOKIE["email"]) && isset($_COOKIE["password"]))
-	echo "<p><mark><b>Username or email:</b></mark><br/><input type=\"text\" name=\"email\" size=\"25\" maxlength=\"60\" value=".$_COOKIE["email"]."/></p>\n\t"
-	   . "<p><mark><b>Password:</b></mark><br/><input type=\"password\" name=\"pass\" size=\"25\" maxlength=\"20\" value=".$_COOKIE["password"]."/></p>\n\t"
+	echo "<p><mark><b>Username or email:</b></mark><br/><input type=\"text\" name=\"email\" size=\"25\" maxlength=\"60\" value=".$_COOKIE["email"]."/> <mark><a href=\"register.php\" title=\"Create account\">Create account</a></mark></p>\n\t"
+	   . "<p><mark><b>Password:</b></mark><br/><input type=\"password\" name=\"pass\" size=\"25\" maxlength=\"20\" value=".$_COOKIE["password"]."/> <mark><a href=\"forgot_password.php\" title=\"I forgot my password.\">I forgot my password.</a></mark></p>\n\t"
 	   . "<p><input type=\"checkbox\" name=\"choice\" value=\"forget\"/><mark>Forget my username and password</mark></p>\n";
 else
-	echo "<p><mark><b>Username or email:</b></mark><br /><input type=\"text\" name=\"email\" size=\"25\" maxlength=\"60\"/></p>\n\t"
-	   . "<p><mark><b>Password:</b></mark><br/><input type=\"password\" name=\"pass\" size=\"25\" maxlength=\"20\"/></p>\n\t"
+	echo "<p><mark><b>Username or email:</b></mark><br /><input type=\"text\" name=\"email\" size=\"25\" maxlength=\"60\"/> <mark><a href=\"register.php\" title=\"Create account\">Create account</a></mark></p>\n\t"
+	   . "<p><mark><b>Password:</b></mark><br/><input type=\"password\" name=\"pass\" size=\"25\" maxlength=\"20\"/> <mark><a href=\"forgot_password.php\" title=\"I forgot my password.\">I forgot my password.</a></mark></p>\n\t"
 	   . "<p><input type=\"checkbox\" name=\"choice\" value=\"remember\"/><mark>Remember my username and password</mark></p>\n";
 ?>
 <!--<p class="captcha_input"><h3><mark>Prove that you're not a robotic impostor</mark></h3>

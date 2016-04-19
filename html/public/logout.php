@@ -2,7 +2,7 @@
 # This is the logout page for the site.
 
 require ('../includes/config.inc.php'); 
-$page_title = 'Logout';
+$page_title = 'Sign out';
 $redirect = '<meta http-equiv="refresh" content="5;url=../index.html">';
 include ('../includes/header.html');
 
