@@ -1,6 +1,6 @@
 function initialize() {
 	var mapProp = {
-		center:new google.maps.LatLng(40.3187458, -74.6734999),
+		center:new google.maps.LatLng(40.15, -74.6734999),
 		zoom:9,
 		mapTypeId:google.maps.MapTypeId.ROADMAP,
 		backgroundColor: '#ffffff',
@@ -33,7 +33,7 @@ function initialize() {
 	var infowindow = new google.maps.InfoWindow({
 		map: map,
 		position: pos,
-		content: '<a href="location.php">Hacklebarney State Park, Washington Township, NJ</a>'
+		content: '<a href="location.html">Hacklebarney State Park, Washington Township, NJ</a>'
 	});
 }
 google.maps.event.addDomListener(window, 'load', initialize);

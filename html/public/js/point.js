@@ -1,6 +1,6 @@
 function initialize() {
 	var mapProp = {
-		center:new google.maps.LatLng(0, 0),
+		center:new google.maps.LatLng(30, 0),
 		zoom:2,
 		mapTypeId:google.maps.MapTypeId.ROADMAP,
 		backgroundColor: '#ffffff',
@@ -33,7 +33,7 @@ function initialize() {
 	var infowindow = new google.maps.InfoWindow({
 		map: map,
 		position: pos,
-		content: '<a href="area.php">New Jersey</a>'
+		content: '<a href="area.html">New Jersey</a>'
 	});
 }
 google.maps.event.addDomListener(window, 'load', initialize);
