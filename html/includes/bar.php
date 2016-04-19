@@ -2,7 +2,7 @@
 // This page completes the HTML template.
 // Display links based upon the login status:
 if (isset($_SESSION['user_id'])) {
-	echo '<a href="../index.html" class="bar" title="Home Page"><li>Home Page</li></a>
+	echo '<a href="../index.html" class="bar" title="Main Page"><li>Main Page</li></a>
 	<a href="../public/logout.php" class="bar" title="Sign out"><li>Sign out</li></a>
 <a href="../public/change_password.php" class="bar" title="Change Password"><li>Change Password</li></a>
 ';

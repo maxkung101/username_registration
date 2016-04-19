@@ -6,7 +6,6 @@ require ('../includes/config.inc.php');
 
 // Set the page title and include the HTML header:
 $page_title = 'Welcome to this Site!';
-$redirect = '<script src="js/point.js"></script>';
 include ('../includes/header.html');
 
 // Welcome the user (by name if they are logged in):
@@ -33,16 +32,6 @@ if ($_SESSION['user_level'] == 1) {
 }
 ?>
 </div>
-<div id="largemap">
-<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=0fzgbxscsjv&amp;m=7&amp;s=320&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
-</div>
-<div id="mediummap">
-<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=04obpvtejkd&amp;m=7&amp;s=270&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
-</div>
-<div id="smallmap">
-<script type="text/javascript" src="//ra.revolvermaps.com/0/0/6.js?i=04obpvtejkd&amp;m=7&amp;s=220&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
-</div>
-<div id="googleMap"></div>
 <p>Spam spam spam spam spam spam
 spam spam spam spam spam spam 
 spam spam spam spam spam spam 
