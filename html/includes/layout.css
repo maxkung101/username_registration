@@ -226,8 +226,10 @@ div#apps { line-height: 30px; }
 
 #googleMap {
 	width:100%;
-	height:800px;
+	height:600px;
 }
+
+#map-image { border: solid thin; }
 
 div#largemap { display:block; text-align: center; }
 div#mediummap { display:none; }
