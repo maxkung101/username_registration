@@ -10,7 +10,7 @@ if (isset($_SESSION['user_id'])) {
 		echo "";
 	} else { die ("You do not have permission to see this page.</div></body></html>"); }
 } else {
-	$url = BASE_URL . '../index.html'; // Define the URL.
+	$url = BASE_URL . '../public/login.php?linkedpage=add_print&admin=0'; // Define the URL.
 	ob_end_clean(); // Delete the buffer.
 	header("Location: $url");
 	exit(); // Quit the script.

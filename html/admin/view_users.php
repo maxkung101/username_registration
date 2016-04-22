@@ -10,7 +10,7 @@ if (isset($_SESSION['user_id'])) {
 		echo "<h1>".$page_title."</h1>";
 	} else { die ("You do not have permission to see this page.</div></body></html>"); }
 } else {
-	$url = BASE_URL . '../index.html'; // Define the URL.
+	$url = BASE_URL . '../public/login.php?linkedpage=view_users&admin=0'; // Define the URL.
 	ob_end_clean(); // Delete the buffer.
 	header("Location: $url");
 	exit(); // Quit the script.
@@ -24,7 +24,8 @@ Modernizr.load( {
 });*/
 </script>
 <?php // inserts sticky_slider.php
-$n = $_GET ["associated"];
+if (isset($_GET ["associated"])) $n = $_GET ["associated"];
+else $n = 0;
 include ("modern_slider.php");
 ?>
 

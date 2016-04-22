@@ -6,7 +6,7 @@ include ('../includes/header.html');
 if (isset($_SESSION['user_id'])) {
 	echo "<h1>".$page_title."</h1>";
 } else {
-	$url = BASE_URL . '../index.html'; // Define the URL.
+	$url = BASE_URL . 'login.php?linkedpage=getweather'; // Define the URL.
 	ob_end_clean(); // Delete the buffer.
 	header("Location: $url");
 	exit(); // Quit the script.

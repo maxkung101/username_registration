@@ -5,6 +5,16 @@ require ('../includes/config.inc.php');
 $page_title = 'Sign in';
 include ('../includes/header.html');
 
+if (isset($_GET ["linkedpage"])) {
+	if (isset($_GET ["admin"])) {
+		$linkedpage = "?linkedpage=".$_GET ["linkedpage"]."&admin=0";
+		$linkpage = "../admin/".$_GET ["linkedpage"].".php";
+	} else {
+		$linkedpage = "?linkedpage=".$_GET ["linkedpage"];
+		$linkpage = $_GET ["linkedpage"].".php";
+	}
+}
+
 if (isset($_SESSION['first_name'])) {
 	$url = BASE_URL . 'index.php'; // Define the URL.
 	ob_end_clean(); // Delete the buffer.
@@ -74,7 +84,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			mysqli_close($dbc);
 
 			// Redirect the user:
-			$url = BASE_URL . 'index.php'; // Define the URL.
+			if (isset($linkpage))
+				$url = BASE_URL . $linkpage; // Define the URL.
+			else
+				$url = BASE_URL . 'index.php'; // Define the URL.
 			ob_end_clean(); // Delete the buffer.
 			header("Location: $url");
 			exit(); // Quit the script.
@@ -93,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <h1><?php echo $page_title; ?></h1>
-<form action="login.php" method="post">
+<form action="login.php<?php if (isset($linkedpage)) echo $linkedpage; ?>" method="post">
 <fieldset>
 <legend><mark>Your browser must allow cookies in order to log in.</mark></legend>
 <?php # This script creates a cookie.

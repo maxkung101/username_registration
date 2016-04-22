@@ -10,7 +10,7 @@ if (isset($_SESSION['user_id'])) {
 	echo "<h1>".$page_title."</h1>";
 	echo "<a href=\"view_cart.php\">View cart</a>";
 } else {
-	$url = BASE_URL . '../index.html'; // Define the URL.
+	$url = BASE_URL . 'login.php?linkedpage=browse_prints'; // Define the URL.
 	ob_end_clean(); // Delete the buffer.
 	header("Location: $url");
 	exit(); // Quit the script.
