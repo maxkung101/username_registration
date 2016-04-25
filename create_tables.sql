@@ -72,7 +72,7 @@ CREATE TABLE order_contents
   print_id INT(10) NOT NULL,
   quantity TINYINT(3) NOT NULL,
   price DECIMAL(6,2) NOT NULL,
-  ship_date DATETIME DEFAULT NOT NULL,
+  ship_date DATETIME NOT NULL,
   PRIMARY KEY (oc_id),
   FOREIGN KEY (order_id) REFERENCES orders(order_id),
   FOREIGN KEY (print_id) REFERENCES prints(print_id),
@@ -84,7 +84,7 @@ INDEX (ship_date)
 CREATE TABLE messages
 (
   message_id INT(11) NOT NULL AUTO_INCREMENT,
-  `body` LONGTEXT(600) NOT NULL,
+  `body` LONGTEXT NOT NULL,
   date_entered DATETIME NOT NULL,
   user_id INT(11) NOT NULL,
   forum_id INT(11) NOT NULL,
