@@ -3,7 +3,7 @@
 CREATE TABLE users
 (
   user_id INT(11) NOT NULL AUTO_INCREMENT,
-  user_level TINYINT(1) NOT NULL DEFAULT 0,
+  user_level INT(1) NOT NULL DEFAULT 0,
   email VARCHAR(60) NOT NULL,
   pass CHAR(40) NOT NULL,
   first_name VARCHAR(20) NOT NULL,
