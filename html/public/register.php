@@ -89,6 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 				// Send the email:
 				$body = "Thank you for registering at <whatever site>. To activate your account, please click on this link:\n\n";
 				$body .= BASE_URL . 'username_registration/html/public/activate.php?x=' . urlencode($e) . "&y=$a";
+				$body .= '<br>Please do not reply to this address. If you have any questions, please send emails to <a href="mailto:maxkung06@gmail.com">maxkung06@gmail.com</a>.';
 				mail($trimmed['email'], 'Registration Confirmation', $body, 'From: donotreply@sitename.com');
 				
 				// Finish the page:
